@@ -133,7 +133,7 @@
             </div>
             <!-- MENU DE CATEGORIAS -->
             <div class="col-sm-12 col-md-9">
-                <div class="card mt-3" style="border: 0px;">
+                <div class="card mt-2 p-3" style="border: 0px;">
                     <div class="row">
                         <div class="car-body">
                             <nav aria-label="breadcrumb">
@@ -145,7 +145,7 @@
                         </div>
                     </div>
                 </div>
-                
+                <!-- Boton nueva categoria -->
                 <div class="row">
                     <div class="card-body">
                         <div class="d-flex justify-content-end">
@@ -159,7 +159,7 @@
                 <!-- MENU ÚLTIMOS PRODUCTOS -->
                 <div class="card mt-3">
                     <div class="card-header bg-dark text-white">
-                        <h4><i class="fas fa-shopping-table"></i> Últimos Productos</h4>
+                        <h4><i class="fas fa-shopping-table"></i> Últimas Categorias</h4>
                     </div>
                     <div class="car-body m-3">
                         <table class="table table-striped">
@@ -306,27 +306,29 @@
 <!-- MODAL PARA CATEGORIA -->
 <div class="modal" id="agregarCategoria" tabindex="-1" role="dialog" aria-labelledby="EjemploModal" aria-hidden="true">
     <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="EjemploModal">Ingresar nueva categoria</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="EjemploModal">Ingresar nueva categoria</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="categoria" class="form-label" aria-placeholder="Ingrese nombre de categoria">Categoria</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label" aria-placeholder="Ingrese una descripcion">Descripcion</label>
+                        <input type="password" class="form-control" id="descripcion">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary"><i class="fas fa-save"> Guardar</i></button>
+            </div>
         </div>
-        <div class="modal-body">
-            <form>
-                <div class="mb-3">
-                    <label for="categoria" class="form-label" aria-placeholder="Ingrese nombre de categoria">Categoria</label>
-                    <input type="email" class="form-control" id="email">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label" aria-placeholder="Ingrese una descripcion">Descripcion</label>
-                    <input type="password" class="form-control" id="descripcion">
-                </div>
-            </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary"><i class="fas fa-save"> Guardar</i></button>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
