@@ -91,8 +91,8 @@
                                 <a href="categorias.html" class="text-dark">Categorias</a>
                                 <span class="badge bg-primary badge-pill">10</span>
                             </li>
-                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-item-center active">
-                                <a href="productos.html" class="text-white">Productos</a>
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-item-center">
+                                <a href="productos.html" class="text-dark">Productos</a>
                                 <span class="badge bg-primary badge-pill">170</span>
                             </li>
                             <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-item-center">
@@ -103,8 +103,8 @@
                                 <a href="pedidos.html" class="text-dark">Pedidos</a>
                                 <span class="badge bg-primary badge-pill">13</span>
                             </li>
-                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-item-center">
-                                <a href="cupones.html" class="text-dark">Cupones</a>
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-item-center active">
+                                <a href="cupones.html" class="text-white">Cupones</a>
                                 <span class="badge bg-primary badge-pill">4</span>
                             </li>
                         </ul>
@@ -130,7 +130,9 @@
                     </div>
                 </div>
             </div>
-            <!-- MENU DE CATEGORIAS -->
+            
+
+            <!-- MENU DE CUPONES -->
             <div class="col-sm-12 col-md-9">
                 <div class="card mt-2 p-3" style="border: 0px;">
                     <div class="row">
@@ -138,45 +140,47 @@
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                   <li class="breadcrumb-item"><a href="panel.html">Inicio</a></li>
-                                  <li class="breadcrumb-item active" aria-current="page">Productos</li>
+                                  <li class="breadcrumb-item active" aria-current="page">Cupones</li>
                                 </ol>
                               </nav>
                         </div>
                     </div>
                 </div>
-                <!-- Boton nuevo producto -->
+                <!-- Boton nuevo cupón -->
                 <div class="row">
                     <div class="card-body">
                         <div class="d-flex justify-content-end">
-                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#agregarProducto">
-                                <i class="fas fa-plus"></i> Nuevo Producto
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#agregarCupon">
+                                <i class="fas fa-plus"></i> Nuevo Cupón
                             </button>
                         </div>
                     </div>
                 </div>
                 
-                <!-- MENU ÚLTIMOS PRODUCTOS -->
+                <!-- MENU CUPONES -->
                 <div class="card mt-3">
                     <div class="card-header bg-dark text-white">
-                        <h4><i class="fas fa-shopping-table"></i> Últimos Productos</h4>
+                        <h4><i class="fas fa-shopping-table"></i> Pedidos</h4>
                     </div>
                     <div class="car-body m-3">
                         <table class="table table-striped">
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Producto</th>
-                                    <th>Talle</th>
-                                    <th>Precio</th>
+                                    <th>Cupón</th>
+                                    <th>Fecha Inicial</th>
+                                    <th>Fecha Final</th>
+                                    <th>Descuento</th>
                                     <th>Acciones</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Camisa 1</td>
-                                    <td>M</td>
-                                    <td>$1480</td>
+                                    <td>XL115874</td>
+                                    <td>03/05/2021</td>
+                                    <td>30/05/2021</td>
+                                    <td>%15</td>
                                     <td style="width: 150px;">
                                         <div class="btn-group" role="group">
                                             <a href="" class="btn btn-primary text-white">
@@ -192,10 +196,11 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>2</td>
-                                    <td>Short</td>
-                                    <td>XL</td>
-                                    <td>$990</td>
+                                    <td>1</td>
+                                    <td>XL478512</td>
+                                    <td>03/04/2021</td>
+                                    <td>30/04/2021</td>
+                                    <td>%15</td>
                                     <td style="width: 150px;">
                                         <div class="btn-group" role="group">
                                             <a href="" class="btn btn-primary text-white">
@@ -211,10 +216,11 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>3</td>
-                                    <td>Remera</td>
-                                    <td>S</td>
-                                    <td>$700</td>
+                                    <td>1</td>
+                                    <td>XL587496</td>
+                                    <td>03/03/2021</td>
+                                    <td>31/03/2021</td>
+                                    <td>%15</td>
                                     <td style="width: 150px;">
                                         <div class="btn-group" role="group">
                                             <a href="" class="btn btn-primary text-white">
@@ -258,7 +264,6 @@
     </div>
 
 
-
     <!-- FOOTER -->
     <section id="main-footer" class="bg-dark text-white mt-5 p-5">
         <div class="container">
@@ -280,12 +285,12 @@
 </body>
 </html>
 
-<!-- MODAL PARA PRODUCTOS -->
-<div class="modal" id="agregarProducto" tabindex="-1" role="dialog" aria-labelledby="EjemploModal" aria-hidden="true">
+<!-- MODAL PARA CUPONES -->
+<div class="modal" id="agregarCupon" tabindex="-1" role="dialog" aria-labelledby="EjemploModal" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="EjemploModal">Ingresar nueva categoria</h5>
+                <h5 class="modal-title" id="EjemploModal">Ingresar nuevo cupón</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -293,20 +298,20 @@
             <div class="modal-body">
                 <form>
                     <div class="mb-3">
-                        <label for="categoria" class="form-label" aria-placeholder="Ingrese nombre de producto">Nombre</label>
-                        <input type="email" class="form-control" id="email">
+                        <label for="categoria" class="form-label" aria-placeholder="Ingrese código del cupón">Código</label>
+                        <input type="text" class="form-control" id="codigo">
                     </div>
                     <div class="mb-3">
-                        <label for="categoria" class="form-label" aria-placeholder="Ingrese el talle">Talle</label>
-                        <input type="text" class="form-control" id="talle">
+                        <label for="categoria" class="form-label" aria-placeholder="Ingrese la fecha inicial">Fecha inicial</label>
+                        <input type="date" class="form-control" id="inicial">
                     </div>
                     <div class="mb-3">
-                        <label for="categoria" class="form-label" aria-placeholder="Ingrese el precio">Nombre</label>
-                        <input type="number" class="form-control" id="precio">
+                        <label for="categoria" class="form-label" aria-placeholder="Ingrese la fecha de finalización">Fecha final</label>
+                        <input type="date" class="form-control" id="final">
                     </div>
                     <div class="mb-3">
-                        <label for="categoria" class="form-label" aria-placeholder="Ingrese una descripcion">Descripcion</label>
-                        <div id="editor"></div>
+                        <label for="categoria" class="form-label" aria-placeholder="Ingrese el porcentaje de descuento">Descuento</label>
+                        <input type="number" class="form-control" id="descuento">
                     </div>
                 </form>
             </div>
@@ -317,14 +322,3 @@
         </div>
     </div>
 </div>
-
-<!-- CKEDITOR -->
-<script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
-<script>
-    ClassicEditor
-        .create( document.querySelector( '#editor' ) )
-        .catch( error => {
-            console.error( error );
-        } 
-    );
-</script>

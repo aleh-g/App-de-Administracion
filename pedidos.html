@@ -91,16 +91,16 @@
                                 <a href="categorias.html" class="text-dark">Categorias</a>
                                 <span class="badge bg-primary badge-pill">10</span>
                             </li>
-                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-item-center active">
-                                <a href="productos.html" class="text-white">Productos</a>
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-item-center">
+                                <a href="productos.html" class="text-dark">Productos</a>
                                 <span class="badge bg-primary badge-pill">170</span>
                             </li>
                             <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-item-center">
                                 <a href="inventario.html" class="text-dark">Inventario</a>
                                 <span class="badge bg-primary badge-pill">500</span>
                             </li>
-                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-item-center">
-                                <a href="pedidos.html" class="text-dark">Pedidos</a>
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-item-center active">
+                                <a href="pedidos.html" class="text-white">Pedidos</a>
                                 <span class="badge bg-primary badge-pill">13</span>
                             </li>
                             <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-item-center">
@@ -129,6 +129,7 @@
                         </ul>
                     </div>
                 </div>
+                
             </div>
             <!-- MENU DE CATEGORIAS -->
             <div class="col-sm-12 col-md-9">
@@ -138,19 +139,9 @@
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                   <li class="breadcrumb-item"><a href="panel.html">Inicio</a></li>
-                                  <li class="breadcrumb-item active" aria-current="page">Productos</li>
+                                  <li class="breadcrumb-item active" aria-current="page">Pedidos</li>
                                 </ol>
                               </nav>
-                        </div>
-                    </div>
-                </div>
-                <!-- Boton nuevo producto -->
-                <div class="row">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-end">
-                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#agregarProducto">
-                                <i class="fas fa-plus"></i> Nuevo Producto
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -158,25 +149,27 @@
                 <!-- MENU ÚLTIMOS PRODUCTOS -->
                 <div class="card mt-3">
                     <div class="card-header bg-dark text-white">
-                        <h4><i class="fas fa-shopping-table"></i> Últimos Productos</h4>
+                        <h4><i class="fas fa-shopping-table"></i> Pedidos</h4>
                     </div>
                     <div class="car-body m-3">
                         <table class="table table-striped">
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Producto</th>
-                                    <th>Talle</th>
-                                    <th>Precio</th>
+                                    <th>Pedido</th>
+                                    <th>Fecha</th>
+                                    <th>Cantidad</th>
+                                    <th>Total</th>
                                     <th>Acciones</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Camisa 1</td>
-                                    <td>M</td>
-                                    <td>$1480</td>
+                                    <td>0001</td>
+                                    <td>06/05/2021</td>
+                                    <td>6</td>
+                                    <td>$5400</td>
                                     <td style="width: 150px;">
                                         <div class="btn-group" role="group">
                                             <a href="" class="btn btn-primary text-white">
@@ -193,9 +186,10 @@
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>Short</td>
-                                    <td>XL</td>
-                                    <td>$990</td>
+                                    <td>0002</td>
+                                    <td>06/05/2021</td>
+                                    <td>4</td>
+                                    <td>$4000</td>
                                     <td style="width: 150px;">
                                         <div class="btn-group" role="group">
                                             <a href="" class="btn btn-primary text-white">
@@ -212,9 +206,30 @@
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>Remera</td>
-                                    <td>S</td>
-                                    <td>$700</td>
+                                    <td>0003</td>
+                                    <td>06/05/2021</td>
+                                    <td>10</td>
+                                    <td>$8900</td>
+                                    <td style="width: 150px;">
+                                        <div class="btn-group" role="group">
+                                            <a href="" class="btn btn-primary text-white">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+                                            <a href="" class="btn btn-success text-white">
+                                                <i class="fas fa-list-alt"></i>
+                                            </a>
+                                            <a href="" class="btn btn-danger text-white">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>0004</td>
+                                    <td>06/05/2021</td>
+                                    <td>3</td>
+                                    <td>$3400</td>
                                     <td style="width: 150px;">
                                         <div class="btn-group" role="group">
                                             <a href="" class="btn btn-primary text-white">
@@ -259,6 +274,9 @@
 
 
 
+
+
+
     <!-- FOOTER -->
     <section id="main-footer" class="bg-dark text-white mt-5 p-5">
         <div class="container">
@@ -279,52 +297,3 @@
     
 </body>
 </html>
-
-<!-- MODAL PARA PRODUCTOS -->
-<div class="modal" id="agregarProducto" tabindex="-1" role="dialog" aria-labelledby="EjemploModal" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="EjemploModal">Ingresar nueva categoria</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                        <label for="categoria" class="form-label" aria-placeholder="Ingrese nombre de producto">Nombre</label>
-                        <input type="email" class="form-control" id="email">
-                    </div>
-                    <div class="mb-3">
-                        <label for="categoria" class="form-label" aria-placeholder="Ingrese el talle">Talle</label>
-                        <input type="text" class="form-control" id="talle">
-                    </div>
-                    <div class="mb-3">
-                        <label for="categoria" class="form-label" aria-placeholder="Ingrese el precio">Nombre</label>
-                        <input type="number" class="form-control" id="precio">
-                    </div>
-                    <div class="mb-3">
-                        <label for="categoria" class="form-label" aria-placeholder="Ingrese una descripcion">Descripcion</label>
-                        <div id="editor"></div>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary"><i class="fas fa-save"> Guardar</i></button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- CKEDITOR -->
-<script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
-<script>
-    ClassicEditor
-        .create( document.querySelector( '#editor' ) )
-        .catch( error => {
-            console.error( error );
-        } 
-    );
-</script>
