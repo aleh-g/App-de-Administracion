@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Fuente de Google Ubuntu -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Estilos personalizados de CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/cae90b9a6b.js" crossorigin="anonymous"></script>
+
+    <title>Administracion</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-3">
+        <img src="img/logo_panel.png" alt="" class="img-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="panel.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tienda
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="categorias.html">Categorias</a></li>
+                        <li><a class="dropdown-item" href="productos.html">Productos</a></li>
+                        <li><a class="dropdown-item" href="inventario.html">Inventario</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="pedidos.html">Pedidos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="cupones.html">Cupones</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Administracion
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Usuarios</a></li>
+                        <li><a class="dropdown-item" href="#">Configuracion</a></li>
+                        <li><a class="dropdown-item" href="#">Roles</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Sistema</a></li>
+                    </ul>
+                </li>
+                <form class="d-flex">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown mr-3" data>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="fas fa-user">Bienvenido</i></a>
+                    <div class="dropdown-menu">
+                        <a href="perfil.html" class="dropdown-item"><i class="fas fa-user-circle"></i>Perfil</a>
+                        <a href="#" class="dropdown-item"><i class="fas fa-cog"></i>Configuraciones</a>
+                        <a href="index.html" class="dropdown-item"><i class="fas fa-user-times"></i>Salir</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CUERPO -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- MENU PRINCIPAL -->
+            <div class="col-sm-12 col-md-3">
+                <div class="card mt-3">
+                    <div class="card-header bg-dark text-white">
+                        <h4><i class="fas fa-align-justify"></i> Menú Principal</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-item-center">
+                                <a href="categorias.html" class="text-dark">Categorias</a>
+                                <span class="badge bg-primary badge-pill">10</span>
+                            </li>
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-item-center">
+                                <a href="productos.html" class="text-dark">Productos</a>
+                                <span class="badge bg-primary badge-pill">170</span>
+                            </li>
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-item-center">
+                                <a href="inventario.html" class="text-dark">Inventario</a>
+                                <span class="badge bg-primary badge-pill">500</span>
+                            </li>
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-item-center">
+                                <a href="pedidos.html" class="text-dark">Pedidos</a>
+                                <span class="badge bg-primary badge-pill">13</span>
+                            </li>
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-item-center">
+                                <a href="cupones.html" class="text-dark">Cupones</a>
+                                <span class="badge bg-primary badge-pill">4</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- MENU ADMINISTRACION-->
+                <div class="card mt-3">
+                    <div class="card-header bg-dark text-white">
+                        <h4><i class="fas fa-align-justify"></i> Administración</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-item-center">
+                                <a href="#" class="text-dark">Usuarios</a>
+                            </li>
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-item-center">
+                                <a href="#" class="text-dark">Configuracion</a>
+                            </li>
+                            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-item-center">
+                                <a href="#" class="text-dark">Sistema</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- MENU DE CUPONES -->
+            <div class="col-sm-12 col-md-9 mt-3">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="car-header m-3">
+                                <strong><h5>EDITAR PERFIL</h5></strong>
+                            </div>
+                            <div class="car-body m-3">
+                                <form>
+                                    <div class="form-group mt-2">
+                                        <label for="nombre">Nombre</label>
+                                        <input type="text" class="form-control" value="Juan Perez">
+                                    </div>
+                                    <div class="form-group mt-2">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" value="juanperez@juanperez.com">
+                                    </div>
+                                    <div class="form-group mt-2">
+                                        <label for="bio">Descripción</label>
+                                        <div id="editor">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quibusdam, eius, a, quaerat veniam quia doloribus et soluta facilis fugiat id odit consectetur consequuntur saepe labore deleniti maxime ipsum magni?
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-info mt-3">Actualizar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-3 col-md-3">
+                        <h3>Imagen</h3>
+                        <img src="img/avatar.png" alt="" class="d-block img-fluid">
+                        <button class="btn btn-primary">Editar imagen</button>
+                        <button class="btn btn-danger">Borrar imagen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <section id="main-footer" class="bg-dark text-white mt-5 p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="lead text-center">
+                        2021- Todos los derechos reservados &copy;
+                        <span>App Commerce</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</body>
+</html>
+
+<!-- CKEDITOR -->
+<script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .catch( error => {
+            console.error( error );
+        } 
+    );
+</script>
